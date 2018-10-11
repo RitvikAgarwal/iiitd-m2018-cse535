@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+    <string name="save_all">Save all</string>
+    <string name="submit">Submit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

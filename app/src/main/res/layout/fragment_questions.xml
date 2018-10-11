@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:layout_margin="@dimen/text_margin"
+        android:padding="16dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <RadioButton
+        android:id="@+id/TrueBut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="True" />
+
+    <RadioButton
+        android:id="@+id/FalseBut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="False" />
+
+
+</LinearLayout>

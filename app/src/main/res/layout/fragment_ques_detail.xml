@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="13dp"
+        android:padding="16dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/ansGrp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/ansGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_marginStart="11dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/savBut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText">
+
+        <RadioButton
+            android:id="@+id/TrueBut"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginBottom="34dp"
+            android:text="True"
+            app:layout_constraintBottom_toTopOf="@+id/savBut"
+            app:layout_constraintEnd_toStartOf="@+id/FalseBut"
+
+            app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+        <RadioButton
+            android:id="@+id/FalseBut"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="34dp"
+            android:text="False"
+            app:layout_constraintBottom_toTopOf="@+id/savBut"
+            app:layout_constraintStart_toEndOf="@+id/TrueBut" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/savBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansGrp" />
+
+
+</android.support.constraint.ConstraintLayout>
